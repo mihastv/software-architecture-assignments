@@ -8,12 +8,8 @@ public class CarConfigurationDirector {
     }
 
     public void setBuilder(CarBuilder builder) {
-        // This method allows changing the builder if needed
     }
 
-    /**
-     * Creates an economy/base configuration
-     */
     public Car buildEconomyCar(String model) {
         return builder.reset()
                 .setModel(model)
@@ -26,9 +22,6 @@ public class CarConfigurationDirector {
                 .build();
     }
 
-    /**
-     * Creates a family/comfort configuration
-     */
     public Car buildFamilyCar(String model) {
         return builder.reset()
                 .setModel(model)
@@ -55,9 +48,6 @@ public class CarConfigurationDirector {
                 .build();
     }
 
-    /**
-     * Creates a sport configuration
-     */
     public Car buildSportsCar(String model) {
         return builder.reset()
                 .setModel(model)
@@ -85,9 +75,6 @@ public class CarConfigurationDirector {
                 .build();
     }
 
-    /**
-     * Creates a luxury configuration
-     */
     public Car buildLuxuryCar(String model) {
         return builder.reset()
                 .setModel(model)
@@ -129,9 +116,6 @@ public class CarConfigurationDirector {
                 .build();
     }
 
-    /**
-     * Creates an electric vehicle configuration
-     */
     public Car buildElectricCar(String model) {
         return builder.reset()
                 .setModel(model)

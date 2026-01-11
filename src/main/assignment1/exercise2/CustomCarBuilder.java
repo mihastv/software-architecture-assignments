@@ -34,7 +34,6 @@ public class CustomCarBuilder implements CarBuilder {
         this.exteriorOptions = new HashSet<>();
         this.safetyFeatures = new HashSet<>();
 
-        // Add standard safety features
         for (SafetyFeature feature : SafetyFeature.values()) {
             if (feature.isStandard()) {
                 this.safetyFeatures.add(feature);
@@ -167,9 +166,6 @@ public class CustomCarBuilder implements CarBuilder {
                 interiorFeatures, exteriorOptions, safetyFeatures, basePrice);
     }
 
-    /**
-     * Validates the current configuration before building
-     */
     private void validateConfiguration() {
         List<String> errors = new ArrayList<>();
 
@@ -189,7 +185,6 @@ public class CustomCarBuilder implements CarBuilder {
             errors.add("Rim type is required");
         }
 
-        // Validate compatibility
         if (engine == EngineType.ELECTRIC && transmission == TransmissionType.MANUAL_5_SPEED) {
             errors.add("Electric vehicles cannot have manual transmission");
         }
@@ -203,9 +198,6 @@ public class CustomCarBuilder implements CarBuilder {
         }
     }
 
-    /**
-     * Returns a summary of the current configuration being built
-     */
     public String getCurrentConfigurationSummary() {
         StringBuilder sb = new StringBuilder();
         sb.append("Current Configuration:\n");

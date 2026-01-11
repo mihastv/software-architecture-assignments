@@ -127,9 +127,6 @@ class CarManagementSystem {
         return results;
     }
 
-    /**
-     * Finds cars by engine type
-     */
     public List<Car> findCarsByEngine(EngineType engineType) {
         List<Car> results = new ArrayList<>();
         for (Car car : inventory) {

@@ -16,10 +16,6 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Comprehensive test suite for the Car Management System application.
- * Combines tests for Document Editor (Factory Pattern) and Car Configuration (Builder Pattern).
- */
 public class CarManagementSystemTest {
 
     private ByteArrayOutputStream outputStream;
@@ -48,10 +44,6 @@ public class CarManagementSystemTest {
     private void clearOutput() {
         outputStream.reset();
     }
-
-    // ============================================================
-    // ENGINE TYPE ENUM TESTS
-    // ============================================================
 
     @Test
     @DisplayName("EngineType: V4 should have correct properties")
@@ -109,10 +101,6 @@ public class CarManagementSystemTest {
         assertTrue(str.contains(engine.getName()));
     }
 
-    // ============================================================
-    // TRANSMISSION TYPE ENUM TESTS
-    // ============================================================
-
     @Test
     @DisplayName("TransmissionType: Manual 5-speed properties")
     public void transmissionType_Manual5Speed_ShouldHaveCorrectProperties() {
@@ -162,10 +150,6 @@ public class CarManagementSystemTest {
         assertFalse(trans.toString().isEmpty());
     }
 
-    // ============================================================
-    // EXTERIOR COLOR ENUM TESTS
-    // ============================================================
-
     @ParameterizedTest
     @EnumSource(ExteriorColor.class)
     @DisplayName("ExteriorColor: All colors should have valid toString")
@@ -179,10 +163,6 @@ public class CarManagementSystemTest {
     public void exteriorColor_ShouldHaveExpectedOptions() {
         assertEquals(7, ExteriorColor.values().length);
     }
-
-    // ============================================================
-    // RIM TYPE ENUM TESTS
-    // ============================================================
 
     @Test
     @DisplayName("RimType: Standard 16 should have size 16")
@@ -204,10 +184,6 @@ public class CarManagementSystemTest {
         assertTrue(rim.getSize() <= 21);
         assertNotNull(rim.toString());
     }
-
-    // ============================================================
-    // INTERIOR FEATURE ENUM TESTS
-    // ============================================================
 
     @Test
     @DisplayName("InteriorFeature: Leather seats should have correct price")
@@ -233,10 +209,6 @@ public class CarManagementSystemTest {
         assertNotNull(feature.toString());
     }
 
-    // ============================================================
-    // EXTERIOR OPTION ENUM TESTS
-    // ============================================================
-
     @Test
     @DisplayName("ExteriorOption: Sunroof should have correct price")
     public void exteriorOption_Sunroof_ShouldHaveCorrectPrice() {
@@ -253,10 +225,6 @@ public class CarManagementSystemTest {
         assertNotNull(option.getName());
         assertNotNull(option.toString());
     }
-
-    // ============================================================
-    // SAFETY FEATURE ENUM TESTS
-    // ============================================================
 
     @Test
     @DisplayName("SafetyFeature: ABS should be standard")
@@ -293,10 +261,6 @@ public class CarManagementSystemTest {
             assertEquals(0.0, feature.getPrice(), 0.01);
         }
     }
-
-    // ============================================================
-    // CUSTOM CAR BUILDER TESTS
-    // ============================================================
 
     @Test
     @DisplayName("Builder: Should create builder with default values")
@@ -568,10 +532,6 @@ public class CarManagementSystemTest {
         assertFalse(summary.isEmpty());
     }
 
-    // ============================================================
-    // CAR CLASS TESTS
-    // ============================================================
-
     @Test
     @DisplayName("Car: Should generate unique VIN")
     public void car_ShouldGenerateUniqueVIN() {
@@ -647,10 +607,6 @@ public class CarManagementSystemTest {
         assertThrows(UnsupportedOperationException.class,
                 () -> features.add(SafetyFeature.NIGHT_VISION));
     }
-
-    // ============================================================
-    // CAR CONFIGURATOR TESTS
-    // ============================================================
 
     @Test
     @DisplayName("Configurator: Should build economy car")
@@ -1380,7 +1336,6 @@ public class CarManagementSystemTest {
     @Test
     @DisplayName("Integration: Full workflow - create car, document, order")
     public void integration_FullWorkflow_ShouldWork() {
-        // Create a custom car
         Car car = system.createCustomCar(
                 builder
                         .setModel("Integration Test Car")

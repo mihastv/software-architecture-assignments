@@ -18,7 +18,6 @@ public class Car {
     private final double basePrice;
     private final String vin;
 
-    // Package-private constructor - only accessible by builder
     Car(String model, int year, EngineType engine, TransmissionType transmission,
         ExteriorColor color, RimType rims, Set<InteriorFeature> interiorFeatures,
         Set<ExteriorOption> exteriorOptions, Set<SafetyFeature> safetyFeatures,
@@ -40,7 +39,6 @@ public class Car {
         return "VIN-" + UUID.randomUUID().toString().substring(0, 8).toUpperCase();
     }
 
-    // Getters
     public String getModel() { return model; }
     public int getYear() { return year; }
     public EngineType getEngine() { return engine; }
@@ -69,9 +67,6 @@ public class Car {
         return total;
     }
 
-    /**
-     * Gets the price of all added options
-     */
     public double getOptionsPrice() {
         return getTotalPrice() - basePrice;
     }
@@ -81,9 +76,6 @@ public class Car {
         return String.format("%d %s", year, model);
     }
 
-    /**
-     * Returns a detailed specification of the car
-     */
     public String getFullSpecification() {
         StringBuilder sb = new StringBuilder();
         String separator = "═".repeat(60);
