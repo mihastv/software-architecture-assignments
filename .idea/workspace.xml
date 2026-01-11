@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0109f2e8-8eac-4979-8844-8f547887b242" name="Changes" comment="assignment 1 exercise 2" />
+    <list default="true" id="0109f2e8-8eac-4979-8844-8f547887b242" name="Changes" comment="assignment 1 exercise 2">
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/CarBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/CarConfigurationDirector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/CarDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/CarDocumentGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/CarManagementSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/CarManagementSystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/CarOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/CustomCarBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/DocumentFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/EngineType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/ExteriorColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/ExteriorOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/HTMLDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/InteriorFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/MarkdownDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/PDFDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/RimType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/SafetyFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/TransmissionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assignment1/bonus/WordDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/software-architecture-assignments/main/assignment1/exercise2/CarConfigurationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/software-architecture-assignments/main/assignment1/exercise2/CarConfigurationTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -25,9 +52,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="387jDZ2OMLpr5zhBRpS9NOzKJ9E" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -37,9 +64,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.main.assignment1.bonus.Main.executor": "Run",
     "Application.main.assignment1.exercise2.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
     "JUnit.CarConfigurationTest.executor": "Coverage",
+    "JUnit.CarManagementSystemTest.executor": "Coverage",
     "JUnit.DocumentEditorTest.executor": "Coverage",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -47,7 +76,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/user/Desktop/miha master/software-architecture-assignments/src/test",
     "node.js.detected.package.eslint": "true",
@@ -56,6 +85,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/user/Desktop/miha master/software-architecture-assignments/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.33103448",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }
@@ -65,13 +97,13 @@
       <recent name="C:\Users\user\Desktop\miha master\software-architecture-assignments\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CarConfigurationTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.assignment1.exercise1.main.Main" />
+  <component name="RunManager" selected="JUnit.CarManagementSystemTest">
+    <configuration name="main.assignment1.bonus.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.assignment1.bonus.Main" />
       <module name="software-architecture-assignments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.assignment1.exercise1.main.*" />
+          <option name="PATTERN" value="main.assignment1.bonus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,6 +139,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarManagementSystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="software-architecture-assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.assignment1.bonus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.assignment1.bonus" />
+      <option name="MAIN_CLASS_NAME" value="main.assignment1.bonus.CarManagementSystemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DocumentEditorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="software-architecture-assignments" />
       <extension name="coverage">
@@ -124,10 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CarManagementSystemTest" />
+        <item itemvalue="Application.main.assignment1.bonus.Main" />
         <item itemvalue="JUnit.CarConfigurationTest" />
         <item itemvalue="Application.main.assignment1.exercise2.Main" />
         <item itemvalue="JUnit.DocumentEditorTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +196,8 @@
       <option name="presentableId" value="Default" />
       <updated>1768157387865</updated>
       <workItem from="1768157389029" duration="6297000" />
+      <workItem from="1768164177084" duration="1402000" />
+      <workItem from="1768165627764" duration="1621000" />
     </task>
     <task id="LOCAL-00001" summary="assignment 1 exercise 1">
       <option name="closed" value="true" />
